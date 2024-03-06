@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff);
+    position: relative;
+    border-radius: 64px;
+  }
+  
+  /* Marker */
+  .marker {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Adjust this to move the marker */
+    width: 2px;
+    height: 100%;
+    background: #000000;
+  }
+
+  
+  .performanceCard{
+    padding: 16px 8px 8px 8px;
+  }
+  .fundaClass{
+    margin: 12px 12px 12px 12px;
+  }

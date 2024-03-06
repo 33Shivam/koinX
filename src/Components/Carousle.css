@@ -1,0 +1,14 @@
+.carousel {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .carousel-inner {
+    display: inline-block;
+  }
+  
+  .carousel-item {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between items */
+  }

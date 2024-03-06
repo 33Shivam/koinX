@@ -1,0 +1,17 @@
+@import '@radix-ui/colors/blue.css';
+
+
+
+/* .left-card{
+    max-width: 30%;
+} */
+
+.info-card{
+    background-color: var(--blue-4);
+    padding: 16px;
+    
+}
+
+/* .card-text{
+    align-content: center;
+} */
