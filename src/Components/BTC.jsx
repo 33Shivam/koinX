@@ -22,7 +22,7 @@ function BTC() {
       .then((response) => response.json())
       .then((data) => {
         setData(data);
-        console.log("Fetched data:", data);
+        // console.log("Fetched data:", data);
       })
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
@@ -77,7 +77,7 @@ function BTC() {
                       {coin.item.name}
                     </Text>
                   </Flex>
-                  <Text size="2">{coin.item.data.price}</Text>
+                  <Text size="2">{coin.item.data.price.substring(0, 4)}</Text>
                 </Flex>
               ))}
           </Flex>

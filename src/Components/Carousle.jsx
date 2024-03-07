@@ -1,18 +1,32 @@
 import React from "react";
-import "./Carousle.css";
 
-const Carousel = ({ items }) => {
+const CoinInfo = ({ coin }) => {
   return (
-    <div className="carousel">
-      <div className="carousel-inner">
-        {items.map((item, index) => (
-          <div className="carousel-item" key={index}>
-            {item}
-          </div>
-        ))}
+    <div key={coin.id}>
+      <h1>
+        {coin.name} ({coin.symbol})
+      </h1>
+      <p>Price: {coin.data.price}</p>
+      <p>Price Change (24h): {coin.data.price_change_percentage_24h.usd}%</p>
+      <p>Market Cap: {coin.data.market_cap}</p>
+      <p>Total Volume: {coin.data.total_volume}</p>
+      <img src={coin.thumb} alt={coin.name} />
+      <div>
+        <img src={coin.data.sparkline} alt={`${coin.name} Sparkline`} />
       </div>
     </div>
   );
 };
 
-export default Carousel;
+const AllCoinsInfo = ({ coins }) => {
+  return (
+    <div>
+      <h1>All Cryptocurrency Information</h1>
+      {coins.map((coin) => (
+        <CoinInfo coin={coin} />
+      ))}
+    </div>
+  );
+};
+
+export default AllCoinsInfo;

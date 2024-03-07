@@ -1,0 +1,41 @@
+.card{
+    height: 100px;
+    width: 300px;
+    min-width: 300px;
+    min-height: 160px;
+    padding: 0%;
+    animation: slide 10s ease-in-out infinite;
+
+}
+
+.img{
+    width : 160px;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    padding: 16px 14px 0px 20px;
+}
+
+.mainContainer{
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
