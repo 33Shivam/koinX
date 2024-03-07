@@ -13,8 +13,8 @@ function Navbar() {
   return (
     <Container height="1">
       <Flex align="center" justify="between" className="navbarFlex">
-        <Text>KoinX</Text>
-        {/* <Avatar src="./koinX.jpg" fallback="A" size="5" /> */}
+        {/* <Avatar src="./logo.svg" fallback="A" size="1" /> */}
+        <img src="./logo.svg" className="logo-img" />
 
         <Flex gap="7" align="center">
           <Text size="2" weight="bold" className="navText">
